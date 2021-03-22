@@ -420,7 +420,7 @@ module.exports = function(grunt) {
                 cmd: "pack",
                 cwd: "<%= paths.dist %>/modules"
             },
-            'topfe': { options: { args: [__dirname+'/packages/node_modules/node-red'] } },
+            'topfe1': { options: { args: [__dirname+'/packages/node_modules/node-red'] } },
             'topfe-editor-api': { options: { args: [__dirname+'/packages/node_modules/@node-red/editor-api'] } },
             'topfe-editor-client': { options: { args: [__dirname+'/packages/node_modules/@node-red/editor-client'] } },
             'topfe-nodes': { options: { args: [__dirname+'/packages/node_modules/@node-red/nodes'] } },
@@ -664,7 +664,7 @@ module.exports = function(grunt) {
 
     grunt.registerTask('release',
         'Create distribution zip file',
-        ['build','verifyPackageDependencies','clean:release','mkdir:release','chmod:release','compress:release','pack-modules','generatePublishScript']);
+        ['build','clean:release','mkdir:release','chmod:release','compress:release','pack-modules','generatePublishScript']);
 
     grunt.registerTask('pack-modules',
         'Create module pack files for release',
