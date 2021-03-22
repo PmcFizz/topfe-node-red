@@ -7,13 +7,13 @@ const should = require("should");
 function generateScript() {
     return new Promise((resolve, reject) => {
         const packages = [
-            "node-red-util",
-            "node-red-runtime",
-            "node-red-registry",
-            "node-red-nodes",
-            "node-red-editor-client",
-            "node-red-editor-api",
-            "node-red"
+            "topfe-util",
+            "topfe-runtime",
+            "topfe-registry",
+            "topfe-nodes",
+            "topfe-editor-client",
+            "topfe-editor-api",
+            "topfe"
         ];
         const rootPackage = require(path.join(__dirname,"..","package.json"));
         const version = rootPackage.version;

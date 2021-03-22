@@ -383,7 +383,7 @@ module.exports = function(grunt) {
                     },
                     {
                         expand: true,
-                        src: ['packages/node_modules/@node-red/editor-client/src/index.html','packages/node_modules/@node-red/editor-client/src/favicon.ico'],
+                        src: ['packages/node_modules/@node-red/editor-client/src/index.html','packages/node_modules/@node-red/editor-client/src/favicon.ico','packages/node_modules/@node-red/editor-client/src/mylogo.png'],
                         dest: 'packages/node_modules/@node-red/editor-client/public/',
                         flatten: true
                     },
@@ -420,13 +420,13 @@ module.exports = function(grunt) {
                 cmd: "pack",
                 cwd: "<%= paths.dist %>/modules"
             },
-            'node-red': { options: { args: [__dirname+'/packages/node_modules/node-red'] } },
-            '@node-red/editor-api': { options: { args: [__dirname+'/packages/node_modules/@node-red/editor-api'] } },
-            '@node-red/editor-client': { options: { args: [__dirname+'/packages/node_modules/@node-red/editor-client'] } },
-            '@node-red/nodes': { options: { args: [__dirname+'/packages/node_modules/@node-red/nodes'] } },
-            '@node-red/registry': { options: { args: [__dirname+'/packages/node_modules/@node-red/registry'] } },
-            '@node-red/runtime': { options: { args: [__dirname+'/packages/node_modules/@node-red/runtime'] } },
-            '@node-red/util': { options: { args: [__dirname+'/packages/node_modules/@node-red/util'] } }
+            'topfe': { options: { args: [__dirname+'/packages/node_modules/node-red'] } },
+            'topfe-editor-api': { options: { args: [__dirname+'/packages/node_modules/@node-red/editor-api'] } },
+            'topfe-editor-client': { options: { args: [__dirname+'/packages/node_modules/@node-red/editor-client'] } },
+            'topfe-nodes': { options: { args: [__dirname+'/packages/node_modules/@node-red/nodes'] } },
+            'topfe-registry': { options: { args: [__dirname+'/packages/node_modules/@node-red/registry'] } },
+            'topfe-runtime': { options: { args: [__dirname+'/packages/node_modules/@node-red/runtime'] } },
+            'topfe-util': { options: { args: [__dirname+'/packages/node_modules/@node-red/util'] } }
 
 
         },
@@ -440,7 +440,7 @@ module.exports = function(grunt) {
         compress: {
             release: {
                 options: {
-                    archive: '<%= paths.dist %>/node-red-<%= pkg.version %>.zip'
+                    archive: '<%= paths.dist %>/topfe-<%= pkg.version %>.zip'
                 },
                 expand: true,
                 cwd: 'packages/node_modules/',
