@@ -420,13 +420,13 @@ module.exports = function(grunt) {
                 cmd: "pack",
                 cwd: "<%= paths.dist %>/modules"
             },
-            'topfe1': { options: { args: [__dirname+'/packages/node_modules/node-red'] } },
-            'topfe-editor-api': { options: { args: [__dirname+'/packages/node_modules/@node-red/editor-api'] } },
-            'topfe-editor-client': { options: { args: [__dirname+'/packages/node_modules/@node-red/editor-client'] } },
-            'topfe-nodes': { options: { args: [__dirname+'/packages/node_modules/@node-red/nodes'] } },
-            'topfe-registry': { options: { args: [__dirname+'/packages/node_modules/@node-red/registry'] } },
-            'topfe-runtime': { options: { args: [__dirname+'/packages/node_modules/@node-red/runtime'] } },
-            'topfe-util': { options: { args: [__dirname+'/packages/node_modules/@node-red/util'] } }
+            'pmc-nodered': { options: { args: [__dirname+'/packages/node_modules/node-red'] } },
+            'pmc-editor-api': { options: { args: [__dirname+'/packages/node_modules/@node-red/editor-api'] } },
+            'pmc-editor-client': { options: { args: [__dirname+'/packages/node_modules/@node-red/editor-client'] } },
+            // 'topfe-nodes': { options: { args: [__dirname+'/packages/node_modules/@node-red/nodes'] } },
+            // 'topfe-registry': { options: { args: [__dirname+'/packages/node_modules/@node-red/registry'] } },
+            // 'topfe-runtime': { options: { args: [__dirname+'/packages/node_modules/@node-red/runtime'] } },
+            // 'topfe-util': { options: { args: [__dirname+'/packages/node_modules/@node-red/util'] } }
 
 
         },
